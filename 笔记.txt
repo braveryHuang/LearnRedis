@@ -1,0 +1,42 @@
+2024-12-18
+	1. 解决功能性的问题：Java，Jsp，RDBMS，Tomcat，HTML，Linux，JDBC，SVN
+	2. 解决扩展性问题：Struts，Spring，SpringMVC，Hibernate，Mybatis
+	3. 解决性能问题：NoSQL，Java线程，Hadoop，Niginx，MQ，ELasticSearch
+	
+	NoSQL 使用的一些场景：
+	1. 解决CPU及内存压力
+		解决分布式服务器的session保存问题
+		1. 保存在客户端cookie中，不安全
+		2. session复制，每个分布式服务器中都有，数据冗余
+		3. NoSQL服务器，缓存session，存内存操作，速度快
+	2. 解决IO压力
+		缓存数据库，介绍IO的读操作
+	
+	NoSQL = Not Only SQL，不仅仅是sql，泛指非关系型数据库
+	key-Value模式存储
+	不支持ACID，不遵循SQL标准，远超SQL性能
+	
+	使用场景：
+	1. 对数据高并发的读写
+	2. 海量数据的读写
+	3. 对数据搞可扩展性
+	
+	不适用场景
+	1. 需要事务支持
+	2. 基于sql的结构化查询
+	（用不着sql或者用了sql也不行的情况，请考虑用Nosql）
+	
+	Memcache
+	一般不持久化，支持类型单一，作为缓存数据库
+	早期的nosql
+	
+	Redis
+	支持持久化，支持多种数据结构，list，set，hash，zset等
+	作为缓存数据库
+	
+	MongoDB
+	文档型数据库
+	
+	===========都是为了提高性能============
+	
+	完成1-4节，需要手动完成Linux下的安装
